@@ -1,0 +1,9 @@
+services:
+  rabbitmq:
+    image: 'rabbitmq:4-management'
+    environment:
+      - 'RABBITMQ_DEFAULT_PASS=delivery'
+      - 'RABBITMQ_DEFAULT_USER=delivery'
+    ports:
+      - '5672:5672'
+      - '15672:15672'
