@@ -36,9 +36,4 @@ public class ApiExceptionHandler {
         return Map.of("error", "Invalid request");
     }
 
-    @ExceptionHandler(Exception.class)
-    @ResponseStatus(HttpStatus.BAD_GATEWAY)
-    public Map<String, String> paymentFailure(Exception exception) {
-        return Map.of("error", "erro inesperado");
-    }
 }

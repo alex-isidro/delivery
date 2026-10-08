@@ -14,7 +14,7 @@ public class DataLoader {
     CommandLineRunner loadDishes(DishRepository repository) {
         return args -> {
             if (repository.count() > 0) return;
-            repository.save(new Dish("House Burger", "Brioche bun, beef and cheese", new BigDecimal("39.90"), 10));
+            repository.save(new Dish("House Burger", "Brioche bun, beef and cheese", new BigDecimal("39.90"), 60));
             repository.save(new Dish("Veggie Burger", "Vegetable patty and fresh salad", new BigDecimal("35.90"), 20));
             repository.save(new Dish("Chicken Bowl", "Chicken, rice and vegetables", new BigDecimal("32.50"), 15));
             repository.save(new Dish("Margherita Pizza", "Tomato, mozzarella and basil", new BigDecimal("42.00"), 12));
